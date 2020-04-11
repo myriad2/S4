@@ -25,3 +25,7 @@ I'll be glad if anyone knows the reason.
 Besides, I have a standalone S4lua-1.1.1-win32.exe file that can be run directly in Windows, I forgot the website I downloaded from. 
 The  exe file is very robust. However, it runs very slow, roughly  10 times slower than the method I show in this fork.
 Also, no parallel even if S4.SolveInParallel is used.
+
+
+
+
