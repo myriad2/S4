@@ -10,5 +10,6 @@ installation instructions, the license and copyright, contact
 addresses, and other important information.
 
 I have tried several forks of the S4 in Ubuntu. However, some can't be installed, while some installed leads to wrong results.
-I notice that victor liu developed the S4 in msys2, so I compiled it in a msys2. And I succeed.
+I notice that victor liu developed the S4 in msys2, so I try to compile S4  in  msys2 env.
+And I successfully installed S4lua and get exact results.
 Here, I list the essential steps:
