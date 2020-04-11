@@ -12,4 +12,5 @@ addresses, and other important information.
 I have tried several forks of the S4 in Ubuntu. However, some can't be installed, while some installed leads to wrong results.
 I notice that victor liu developed the S4 in msys2, so I try to compile S4  in  msys2 env.
 And I successfully installed S4lua and get exact results.
-Here, I list the essential steps:
+Essentially, I made some change to Makefile.Msys2 to include lua5.2 and remove -DLUA_BUILD_AS_DLL
+I also write a simple script file to simplify the installation.You can run it in msys2 by type ".\install_S4.sh"
