@@ -18,7 +18,7 @@ since the same scattering matrices are to calculated for many times.
 
 3. 
 Besides, I have a standalone S4lua-1.1.1-win32.exe file that can be run directly in Windows. Howevr, I forgot where I got it. 
-The  exe file is very robust. However, it runs in single thread even if S4.SolveInParallel is used.
+The  exe file is very robust to all functions. However, it runs with a single thread even if S4.SolveInParallel is used, so it runs very very slow, about 300 second for the case NumG=400 in "my_ex2.lua".
 
 
 
