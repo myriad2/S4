@@ -1,8 +1,16 @@
+1. 
 Currently, running convergence test in the original "ex2.lua"   leads "segmentation fault".
 The fault comes with "for nG = 101,401,40 do S:SetNumG(ng) ... ". 
 If you change the script to "for nG = 401,101,-40 do S:SetNumG(ng) ... ", you get no fault. However, the results is totally wrong.
+You may test "my_ex2.lua" on your own.
 I'll be glad if anyone knows the reason.
 
+2. Running the original "fresnel.lua" file, I get all zero coefficients for all incident angles.
+So, I add a Slab layer, which leads to correct results if for loops is not used.
+When for loop is used, however, the coefficents will not change as the incident angle changes. 
+I think this has the same root with the problem 1 that S4lua doesn't reallocate the fields.
+
+3. 
 Besides, I have a standalone S4lua-1.1.1-win32.exe file that can be run directly in Windows, I forgot the website I downloaded from. 
 The  exe file is very robust. However, it runs very slow, roughly  10 times slower than the method I show in this fork.
 Also, no parallel running even if S4.SolveInParallel is used.
