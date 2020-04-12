@@ -17,14 +17,7 @@ And I successfully installed S4lua and get exact results.
 Essentially, I made some change to Makefile.Msys2 to include lua5.2 and remove -DLUA_BUILD_AS_DLL
 I also write a simple script file to simplify the installation. You can run it in msys2 by type ".\install_S4_in_msys2.sh" in the shell
 
-Currently, running convergence test in the original "ex2.lua"   leads "segmentation fault".
-The fault comes with "for nG = 101,401,40 do S:SetNumG(ng) ... ". 
-If you change the script to "for nG = 401,101,-40 do S:SetNumG(ng) ... ", you get no fault. However, the results is totally wrong.
-I'll be glad if anyone knows the reason.
-
-Besides, I have a standalone S4lua-1.1.1-win32.exe file that can be run directly in Windows, I forgot the website I downloaded from. 
-The  exe file is very robust. However, it runs very slow, roughly  10 times slower than the method I show in this fork.
-Also, no parallel even if S4.SolveInParallel is used.
+See testing.txt for some problems I found.
 
 
 
