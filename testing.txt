@@ -6,10 +6,11 @@ You may test "my_ex2.lua" on your own.
 I'll be glad if anyone knows the reason.
 
 2. Running the original "fresnel.lua" file, I get all zero coefficients for all incident angles.
-So, I add a Slab layer, which leads to correct results if for loops is not used.
+So, I add a Slab layer, which leads to correct results if for loops is not used, see "my_fresnel.lua".
 When for loop is used, however, the coefficents will not change as the incident angle changes. 
-I think this has the same root with the problem 1 that S4lua doesn't reallocate the fields.
-I will test this point if possible.
+I think this has the same root with the problem 1 that S4lua doesn't reallocate some variables of the S4 class.
+I tested this point in "my_fresnel2.lua", where the for loop encompasses the whole script including S4.NewSimulations().
+The results are correct now. This compromise method might have little effect on compuation efficiency if you are scanning frequency or NumG, since scattering matrices definitly dependent on frequency and NumG. However, when you are scanning incident angle, computation efficiency would be low, since the same scattering matrices are to calculated for many times.
 
 3. 
 Besides, I have a standalone S4lua-1.1.1-win32.exe file that can be run directly in Windows, I forgot the website I downloaded from. 
